@@ -1,0 +1,270 @@
+/* ════════════════════════════════════
+   works.css — 作品詳細ページ専用スタイル
+   （works/*.html でのみ読み込む。トップページでは使わない）
+   色変数・ボタン・ヘッダー/フッターは style.css 側。
+════════════════════════════════════ */
+
+/* ── 全体（固定ヘッダー分の余白を確保） ── */
+.wd {
+  padding-top: calc(var(--header-h) + 3.5rem);
+  padding-bottom: 6rem;
+}
+
+/* ── ヒーロー（タイトル・要約・タグ・ボタン） ── */
+.wd__head {
+  text-align: center;
+}
+.wd__title {
+  margin: 0.85rem auto 1rem;
+  max-width: 34rem;
+  font-family: var(--font-serif);
+  font-size: 2.4rem;
+  line-height: 1.25;
+  color: var(--deep);
+}
+.wd__summary {
+  margin: 0 auto 1.5rem;
+  max-width: 32rem;
+  font-size: 0.95rem;
+  line-height: 1.9;
+  color: var(--slated);
+}
+.wd__tags {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.wd__live {
+  margin: 0;
+}
+.wd__live a,
+.wd__live-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #5e7a99;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition:
+    color 0.2s,
+    border-color 0.2s;
+}
+.wd__live a:hover,
+.wd__live-link:hover {
+  color: var(--deep);
+  border-bottom-color: currentColor;
+}
+
+/* ── ヒーローのメインビジュアル（自作画像を1枚入れる空スロット） ── */
+.wd__visual {
+  max-width: 54rem;
+  margin: 3.5rem auto 0;
+}
+.wd__hero-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* スマホ枠（画面紹介のスクロール窓で使用） */
+.shot--phone {
+  border: 5px solid #fff;
+  border-radius: 22px;
+  box-shadow: 0 22px 44px -18px rgba(29, 46, 64, 0.5);
+}
+
+/* ── スクロール窓（GoFullPage等の全長スクショ用） ── */
+.shot--scroll {
+  display: flex;
+  flex-direction: column;
+  height: 420px;
+}
+.shot--scroll .shot__bar {
+  flex: none;
+}
+.shot--scroll .shot__scrollarea {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: linear-gradient(135deg, #ffffff, #eef3f7);
+  scrollbar-width: thin;
+  scrollbar-color: rgba(165, 187, 212, 0.5) transparent;
+}
+.shot--scroll .shot__scrollarea::-webkit-scrollbar {
+  width: 8px;
+}
+.shot--scroll .shot__scrollarea::-webkit-scrollbar-thumb {
+  background: rgba(165, 187, 212, 0.5);
+  border-radius: 8px;
+}
+.shot__longimg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* ── 本文ブロック ── */
+.wd__body {
+  margin-top: 4.5rem;
+}
+
+/* プロジェクト情報 */
+.wd__info {
+  padding: 1.5rem 1.75rem;
+  border: 1px solid var(--borderl);
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(165, 187, 212, 0.05);
+}
+.wd__info dl {
+  display: grid;
+  grid-template-columns: 5.5rem 1fr;
+  gap: 0.85rem 1rem;
+  margin: 0;
+}
+@media (min-width: 480px) {
+  .wd__info dl {
+    grid-template-columns: 7rem 1fr;
+  }
+}
+.wd__info dt {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--deep);
+}
+.wd__info dd {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--slated);
+}
+
+/* セクション（見出し＋本文） */
+.wd__section {
+  margin-top: 3.5rem;
+}
+.wd__section h2 {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  color: var(--deep);
+}
+.wd__num {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--pastel-blue);
+}
+.wd__section p {
+  font-size: 0.9rem;
+  line-height: 1.95;
+  font-weight: 300;
+  color: var(--slated);
+}
+
+/* 工夫リスト */
+.wd__points {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.wd__points li {
+  position: relative;
+  padding-left: 1.4rem;
+  font-size: 0.9rem;
+  line-height: 1.85;
+  color: var(--slated);
+}
+.wd__points li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.62em;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--pastel-pink), var(--pastel-blue));
+}
+.wd__points b {
+  color: var(--deep);
+  font-weight: 600;
+}
+
+/* 画面紹介（PC＋スマホのスクロール窓） */
+.wd__screens {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.75rem;
+  margin-top: 1.5rem;
+}
+.wd__screen {
+  margin: 0;
+  width: 100%;
+}
+.wd__screen--sp {
+  width: 220px;
+}
+.wd__screen .shot {
+  width: 100%;
+}
+.wd__screen figcaption {
+  margin-top: 0.6rem;
+  font-size: 0.75rem;
+  color: rgba(59, 78, 97, 0.7);
+  text-align: center;
+}
+
+/* 最下部 CTA */
+.wd__foot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  margin-top: 4.5rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--borderl);
+  text-align: center;
+}
+.wd__back {
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  color: var(--slated);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.wd__back:hover {
+  color: var(--deep);
+}
+
+@media (min-width: 700px) {
+  .wd__title {
+    font-size: 2.8rem;
+  }
+  .wd__screens {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .wd__screen--pc {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+  .wd__screen--sp {
+    flex: 0 0 220px;
+    width: 220px;
+  }
+}

@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LPサイト｜AXIS — Yuki Kabutomori</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&family=Noto+Serif+JP:wght@300;400&display=swap" rel="stylesheet" />
+    <link rel="icon" href="../favicon.ico" />
+    <link rel="stylesheet" href="../css/destyle.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/works.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav">
+        <a href="../index.html" class="logo">
+          <span class="logo__pre">Yuki</span>
+          <span class="logo__sep">/</span>
+          <span class="logo__post">Kabutomori</span>
+        </a>
+        <a href="../index.html#works" class="btn btn--outline btn--sm">← Works 一覧へ</a>
+      </nav>
+    </header>
+
+    <main class="wd">
+      <div class="container container--narrow wd__head">
+        <h1 class="wd__title">AXIS</h1>
+        <p class="wd__summary">架空レンタルオフィスのLPサイト</p>
+        <div class="wd__tags">
+          <span class="tag tag--lavender">WEB DESIGN</span>
+          <span class="tag tag--pink">LP</span>
+        </div>
+        <p class="wd__live"><a href="https://intp.site/3059/axis_minatomirai/">https://intp.site/3059/axis_minatomirai/</a></p>
+        <div class="wd__screens">
+          <figure class="wd__screen wd__screen--pc">
+            <div class="shot shot--browser shot--scroll">
+              <div class="shot__bar"><span></span><span></span><span></span></div>
+              <div class="shot__scrollarea">
+                <img class="shot__longimg" src="../img/works/work_2_pc.png" alt="axis 全体（PC）" loading="lazy" onerror="this.style.display = 'none'" />
+              </div>
+            </div>
+            <figcaption>※PC表示</figcaption>
+          </figure>
+          <figure class="wd__screen wd__screen--sp">
+            <div class="shot shot--phone shot--scroll">
+              <div class="shot__scrollarea">
+                <img class="shot__longimg" src="../img/works/work_2_sp.png" alt="axis 全体（スマホ）" loading="lazy" onerror="this.style.display = 'none'" />
+              </div>
+            </div>
+            <figcaption>※スマホ表示</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <!-- ── メインビジュアル（自作画像を1枚入れる。img/works/ に置くと表示） ── -->
+      <div class="container">
+        <div class="wd__visual">
+          <img class="wd__hero-img" src="../img/works/work_2_hero.png" alt="axis メインビジュアル" loading="lazy" onerror="this.style.display = 'none'" />
+        </div>
+      </div>
+
+      <!-- ── 本文 ── -->
+      <div class="container container--narrow wd__body">
+        <!-- ② プロジェクト情報 -->
+        <div class="wd__info">
+          <dl>
+            <dt>担当範囲</dt>
+            <dd>デザイン・コーディング</dd>
+            <dt>使用ツール</dt>
+            <dd>Figma / HTML / CSS / JavaScript</dd>
+            <dt>制作期間</dt>
+            <dd>約2週間</dd>
+            <dt>種別</dt>
+            <dd>LPサイト</dd>
+          </dl>
+        </div>
+
+        <!-- ③ 目的・課題 -->
+        <section class="wd__section">
+          <h2><span class="wd__num">01</span> 目的と課題</h2>
+          <p>架空のレンタルオフィス「AXIS Minatomirai」の開業告知LPという設定で制作しました。内覧予約への誘導を最大化することを目標に、ブランドイメージの統一と迷わせない導線設計を意識しました。</p>
+        </section>
+
+        <!-- ④ 工夫したこと（★最重要） -->
+        <section class="wd__section">
+          <h2><span class="wd__num">02</span> 工夫したこと</h2>
+          <ul class="wd__points">
+            <li>
+              <b>スクロールスパイによる現在地ハイライト</b><br />
+              スクロール位置をIntersectionObserverで検知し、表示中のセクションに対応するナビ項目に`is-current`クラスを付与。どのセクションを見ているかをヘッダーに反映しました。
+            </li>
+            <li>
+              <b>フォームバリデーション</b><br />
+              一度触れたフィールドだけエラーを表示する`touched`フラグを実装。送信ボタンは初期状態でdisabledにし、全項目が正常になると活性化します。
+            </li>
+            <li>
+              <b>&lt;picture&gt;要素でSP/PC画像を出し分け</b><br />
+              ヒーロー画像をメディアクエリで切り替え、SP向けに最適化した画像を配信しました。
+            </li>
+            <li>
+              <b>ハンバーガーメニューの操作性</b><br />
+              オーバーレイのタップ・Escキー・リンククリックの3パターンで閉じられるようにしました。
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="container container--narrow wd__foot">
+        <a href="https://intp.site/3059/axis_minatomirai/" class="wd__live-link">https://intp.site/3059/axis_minatomirai/</a>
+        <a href="../index.html#works" class="wd__back">← 制作実績の一覧へ戻る</a>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <a href="../index.html" class="logo logo--light">
+          <span class="logo__pre">Yuki</span>
+          <span class="logo__sep">/</span>
+          <span class="logo__post">Kabutomori</span>
+        </a>
+        <p class="site-footer__copy">© 2026 Yuki Kabutomori. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
