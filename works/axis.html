@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LPサイト｜AXIS — Yuki Kabutomori</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&family=Noto+Serif+JP:wght@300;400&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&family=Klee+One:wght@400;600&family=Murecho:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="icon" href="../favicon.ico" />
     <link rel="stylesheet" href="../css/destyle.css" />
     <link rel="stylesheet" href="../css/style.css" />
@@ -25,19 +28,19 @@
 
     <main class="wd">
       <div class="container container--narrow wd__head">
-        <h1 class="wd__title">AXIS</h1>
-        <p class="wd__summary">架空レンタルオフィスのLPサイト</p>
+        <h1 class="wd__title text-heading">AXIS</h1>
+        <p class="wd__summary text-paragraph">架空レンタルオフィスのLPサイト</p>
         <div class="wd__tags">
-          <span class="tag tag--lavender">WEB DESIGN</span>
-          <span class="tag tag--pink">LP</span>
+          <span class="tag tag--indigo text-label">Web Design</span>
+          <span class="tag tag--blue text-label">LP</span>
         </div>
-        <p class="wd__live"><a href="https://intp-sun.site/wdex12/axis_minatomirai/" target="_blank" rel="noopener">https://intp-sun.site/wdex12/axis_minatomirai/</a></p>
+        <p class="wd__live"><a class="text-label" href="https://intp-sun.site/wdex12/axis_minatomirai/" target="_blank" rel="noopener">https://intp-sun.site/wdex12/axis_minatomirai/</a></p>
         <div class="wd__screens">
           <figure class="wd__screen wd__screen--pc">
-            <div class="shot shot--browser shot--scroll">
+            <div class="shot shot--scroll">
               <div class="shot__bar"><span></span><span></span><span></span></div>
               <div class="shot__scrollarea">
-                <img class="shot__longimg" src="../img/works/work_2_pc.png" alt="axis 全体（PC）" loading="lazy" onerror="this.style.display = 'none'" />
+                <img class="shot__longimg" src="../img/works/axis_pc.png" alt="axis 全体（PC）" loading="lazy" onerror="this.style.display = 'none'" />
               </div>
             </div>
             <figcaption>※PC表示</figcaption>
@@ -45,7 +48,7 @@
           <figure class="wd__screen wd__screen--sp">
             <div class="shot shot--phone shot--scroll">
               <div class="shot__scrollarea">
-                <img class="shot__longimg" src="../img/works/work_2_sp.png" alt="axis 全体（スマホ）" loading="lazy" onerror="this.style.display = 'none'" />
+                <img class="shot__longimg" src="../img/works/axis_sp.png" alt="axis 全体（スマホ）" loading="lazy" onerror="this.style.display = 'none'" />
               </div>
             </div>
             <figcaption>※スマホ表示</figcaption>
@@ -62,38 +65,40 @@
       <div class="container container--narrow wd__body">
         <div class="wd__info">
           <dl>
-            <dt>担当範囲</dt>
-            <dd>デザイン・コーディング</dd>
-            <dt>使用ツール</dt>
-            <dd>Figma / HTML / CSS / JavaScript</dd>
-            <dt>制作期間</dt>
-            <dd>約2週間</dd>
-            <dt>種別</dt>
-            <dd>LPサイト</dd>
+            <dt class="text-label">担当範囲</dt>
+            <dd class="text-paragraph">デザイン・コーディング</dd>
+            <dt class="text-label">使用ツール</dt>
+            <dd class="text-paragraph">Figma / HTML / CSS / JavaScript</dd>
+            <dt class="text-label">制作期間</dt>
+            <dd class="text-paragraph">約2週間</dd>
+            <dt class="text-label">種別</dt>
+            <dd class="text-paragraph">LPサイト</dd>
           </dl>
         </div>
 
         <section class="wd__section">
-          <h2><span class="wd__num">01</span> 目的と課題</h2>
-          <p>架空のレンタルオフィス「AXIS Minatomirai」の開業告知LPという設定で制作しました。内覧予約への誘導を最大化することを目標に、ブランドイメージの統一と迷わせない導線設計を意識しました。</p>
+          <h2 class="text-heading">目的と課題</h2>
+          <p class="text-paragraph">
+            架空のレンタルオフィス「AXIS Minatomirai」の開業告知LPという設定で制作しました。内覧予約への誘導を最大化することを目標に、ブランドイメージの統一と迷わせない導線設計を意識しました。
+          </p>
         </section>
 
         <section class="wd__section">
-          <h2><span class="wd__num">02</span> 工夫したこと</h2>
+          <h2 class="text-heading">工夫したこと</h2>
           <ul class="wd__points">
-            <li>
+            <li class="text-paragraph">
               <b>スクロールスパイによる現在地ハイライト</b><br />
               スクロール位置をIntersectionObserverで検知し、表示中のセクションに対応するナビ項目に`is-current`クラスを付与。どのセクションを見ているかをヘッダーに反映しました。
             </li>
-            <li>
+            <li class="text-paragraph">
               <b>フォームバリデーション</b><br />
               一度触れたフィールドだけエラーを表示する`touched`フラグを実装。送信ボタンは初期状態でdisabledにし、全項目が正常になると活性化します。
             </li>
-            <li>
+            <li class="text-paragraph">
               <b>&lt;picture&gt;要素でSP/PC画像を出し分け</b><br />
               ヒーロー画像をメディアクエリで切り替え、SP向けに最適化した画像を配信しました。
             </li>
-            <li>
+            <li class="text-paragraph">
               <b>ハンバーガーメニューの操作性</b><br />
               オーバーレイのタップ・Escキー・リンククリックの3パターンで閉じられるようにしました。
             </li>
@@ -102,8 +107,8 @@
       </div>
 
       <div class="container container--narrow wd__foot">
-        <a href="https://intp-sun.site/wdex12/axis_minatomirai/" class="wd__live-link" target="_blank" rel="noopener">https://intp-sun.site/wdex12/axis_minatomirai/</a>
-        <a href="../index.html#works" class="wd__back">← 制作実績の一覧へ戻る</a>
+        <a href="https://intp-sun.site/wdex12/axis_minatomirai/" class="wd__live-link text-label" target="_blank" rel="noopener">https://intp-sun.site/wdex12/axis_minatomirai/</a>
+        <a href="../index.html#works" class="wd__back text-meta">← 制作実績の一覧へ戻る</a>
       </div>
     </main>
 
@@ -114,7 +119,7 @@
           <span class="logo__sep">/</span>
           <span class="logo__post">Kabutomori</span>
         </a>
-        <p class="site-footer__copy">© 2026 Yuki Kabutomori. All rights reserved.</p>
+        <p class="site-footer__copy text-meta">© 2026 Yuki Kabutomori. All rights reserved.</p>
       </div>
     </footer>
   </body>

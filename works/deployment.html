@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>コーポレートサイト｜Deployment — Yuki Kabutomori</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&family=Noto+Serif+JP:wght@300;400&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&family=Klee+One:wght@400;600&family=Murecho:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="icon" href="../favicon.ico" />
     <link rel="stylesheet" href="../css/destyle.css" />
     <link rel="stylesheet" href="../css/style.css" />
@@ -25,19 +28,19 @@
 
     <main class="wd">
       <div class="container container--narrow wd__head">
-        <h1 class="wd__title">Deployment</h1>
-        <p class="wd__summary">架空IT企業のコーポレートサイト</p>
+        <h1 class="wd__title text-heading">Deployment</h1>
+        <p class="wd__summary text-paragraph">架空IT企業のコーポレートサイト</p>
         <div class="wd__tags">
-          <span class="tag tag--lavender">WEB DESIGN</span>
-          <span class="tag tag--mint">CORPORATE</span>
+          <span class="tag tag--indigo text-label">Web Design</span>
+          <span class="tag tag--violet text-label">Corporate</span>
         </div>
-        <p class="wd__live"><a href="https://intp-sun.site/wdex12/deployment_corp/" target="_blank" rel="noopener">https://intp-sun.site/wdex12/deployment_corp/</a></p>
+        <p class="wd__live"><a class="text-label" href="https://intp-sun.site/wdex12/deployment_corp/" target="_blank" rel="noopener">https://intp-sun.site/wdex12/deployment_corp/</a></p>
         <div class="wd__screens">
           <figure class="wd__screen wd__screen--pc">
-            <div class="shot shot--browser shot--scroll">
+            <div class="shot shot--scroll">
               <div class="shot__bar"><span></span><span></span><span></span></div>
               <div class="shot__scrollarea">
-                <img class="shot__longimg" src="../img/works/work_1_pc.png" alt="Deployment サイト全体（PC）" loading="lazy" onerror="this.style.display = 'none'" />
+                <img class="shot__longimg" src="../img/works/deployment_pc.png" alt="Deployment サイト全体（PC）" loading="lazy" onerror="this.style.display = 'none'" />
               </div>
             </div>
             <figcaption>※PC表示</figcaption>
@@ -45,7 +48,7 @@
           <figure class="wd__screen wd__screen--sp">
             <div class="shot shot--phone shot--scroll">
               <div class="shot__scrollarea">
-                <img class="shot__longimg" src="../img/works/work_1_sp.png" alt="Deployment サイト全体（スマホ）" loading="lazy" onerror="this.style.display = 'none'" />
+                <img class="shot__longimg" src="../img/works/deployment_sp.png" alt="Deployment サイト全体（スマホ）" loading="lazy" onerror="this.style.display = 'none'" />
               </div>
             </div>
             <figcaption>※スマホ表示</figcaption>
@@ -62,44 +65,44 @@
       <div class="container container--narrow wd__body">
         <div class="wd__info">
           <dl>
-            <dt>担当範囲</dt>
-            <dd>デザイン・コーディング</dd>
-            <dt>使用ツール</dt>
-            <dd>Figma / HTML / CSS / JavaScript / PHP</dd>
-            <dt>制作期間</dt>
-            <dd>約3週間</dd>
-            <dt>種別</dt>
-            <dd>コーポレートサイト</dd>
+            <dt class="text-label">担当範囲</dt>
+            <dd class="text-paragraph">デザイン・コーディング</dd>
+            <dt class="text-label">使用ツール</dt>
+            <dd class="text-paragraph">Figma / HTML / CSS / PHP / JavaScript</dd>
+            <dt class="text-label">制作期間</dt>
+            <dd class="text-paragraph">約3週間</dd>
+            <dt class="text-label">種別</dt>
+            <dd class="text-paragraph">コーポレートサイト</dd>
           </dl>
         </div>
 
         <section class="wd__section">
-          <h2><span class="wd__num">01</span> 目的と課題</h2>
-          <p>
+          <h2 class="text-heading">目的と課題</h2>
+          <p class="text-paragraph">
             「架空のIT企業のコーポレートサイトをリニューアルする」という設定で制作しました。旧サイトはレスポンシブ非対応でスマートフォンでの表示が崩れており、モバイルユーザーへの対応が課題でした。リニューアルにあたり、どのデバイスでも快適に閲覧・操作できるサイトを目標に制作しています。
           </p>
         </section>
 
         <section class="wd__section">
-          <h2><span class="wd__num">02</span> 工夫したこと</h2>
+          <h2 class="text-heading">工夫したこと</h2>
           <ul class="wd__points">
-            <li>
+            <li class="text-paragraph">
               <b>PHPインクルード＋JSONデータ管理</b><br />
               head・header・footerを共通パーツとして分離。導入事例とお知らせのデータはJSONで一元管理することでページ間の一貫性とメンテナンス性を高めました。
             </li>
-            <li>
+            <li class="text-paragraph">
               <b>スライダーの端でボタンを非活性化</b><br />
               導入事例の横スクロールスライダーで、先頭・末尾に達したタイミングで矢印ボタンをdisabledにし、操作の限界を直感的に伝えました。
             </li>
-            <li>
+            <li class="text-paragraph">
               <b>入力バリデーション付きお問い合わせフォーム</b><br />
               JSによるリアルタイムバリデーションとPHPによるサーバーサイド処理を組み合わせ、入力→確認→完了の3ステップで送信ミスを防ぐ設計にしました。
             </li>
-            <li>
+            <li class="text-paragraph">
               <b>採用サイトのMVにアニメーションを導入</b><br />
               採用サイトLPのメインビジュアルにJavaScriptでアニメーションを実装し、印象的なファーストビューを演出しました。
             </li>
-            <li>
+            <li class="text-paragraph">
               <b>採用サイトで募集停止の求人にクラスを付与して表示を切り替え</b><br />
               募集を停止した職種カードに<code>is-closed</code>クラスを付与し、タグの表示とエントリーボタンの非表示をCSSで制御しました。
             </li>
@@ -108,8 +111,8 @@
       </div>
 
       <div class="container container--narrow wd__foot">
-        <a href="https://intp-sun.site/wdex12/deployment_corp/" class="wd__live-link" target="_blank" rel="noopener">https://intp-sun.site/wdex12/deployment_corp/</a>
-        <a href="../index.html#works" class="wd__back">← 制作実績の一覧へ戻る</a>
+        <a href="https://intp-sun.site/wdex12/deployment_corp/" class="wd__live-link text-label" target="_blank" rel="noopener">https://intp-sun.site/wdex12/deployment_corp/</a>
+        <a href="../index.html#works" class="wd__back text-meta">← 制作実績の一覧へ戻る</a>
       </div>
     </main>
 
@@ -120,7 +123,7 @@
           <span class="logo__sep">/</span>
           <span class="logo__post">Kabutomori</span>
         </a>
-        <p class="site-footer__copy">© 2026 Yuki Kabutomori. All rights reserved.</p>
+        <p class="site-footer__copy text-meta">© 2026 Yuki Kabutomori. All rights reserved.</p>
       </div>
     </footer>
   </body>

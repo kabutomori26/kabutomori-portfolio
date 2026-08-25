@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>架空カフェサイト｜Andante — Yuki Kabutomori</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&family=Klee+One:wght@400;600&family=Murecho:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="../favicon.ico" />
+    <link rel="stylesheet" href="../css/destyle.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/works.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav">
+        <a href="../index.html" class="logo">
+          <span class="logo__pre">Yuki</span>
+          <span class="logo__sep">/</span>
+          <span class="logo__post">Kabutomori</span>
+        </a>
+        <a href="../index.html#works" class="btn btn--outline btn--sm">← 制作実績の一覧へ戻る</a>
+      </nav>
+    </header>
+
+    <main class="wd">
+      <div class="container container--narrow wd__head">
+        <h1 class="wd__title text-heading">Andante</h1>
+        <p class="wd__summary text-paragraph">架空カフェのWordPressサイト</p>
+        <div class="wd__tags">
+          <span class="tag tag--indigo text-label">Web Design</span>
+          <span class="tag tag--rose text-label">WordPress</span>
+        </div>
+        <p class="wd__live"><a class="text-label" href="https://intp-sun.site/wdex12/andante/" target="_blank" rel="noopener">https://intp-sun.site/wdex12/andante/</a></p>
+        <div class="wd__screens">
+          <figure class="wd__screen wd__screen--pc">
+            <div class="shot shot--scroll">
+              <div class="shot__bar"><span></span><span></span><span></span></div>
+              <div class="shot__scrollarea">
+                <img class="shot__longimg" src="../img/works/andante_pc.png" alt="Andante 全体（PC）" loading="lazy" onerror="this.style.display = 'none'" />
+              </div>
+            </div>
+            <figcaption>※PC表示</figcaption>
+          </figure>
+          <figure class="wd__screen wd__screen--sp">
+            <div class="shot shot--phone shot--scroll">
+              <div class="shot__scrollarea">
+                <img class="shot__longimg" src="../img/works/andante_sp.png" alt="Andante 全体（スマホ）" loading="lazy" onerror="this.style.display = 'none'" />
+              </div>
+            </div>
+            <figcaption>※スマホ表示</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="container container--narrow wd__body">
+        <div class="wd__info">
+          <dl>
+            <dt class="text-label">担当範囲</dt>
+            <dd class="text-paragraph">デザイン・コーディング・WordPress実装</dd>
+            <dt class="text-label">使用ツール</dt>
+            <dd class="text-paragraph">Figma / HTML / CSS / PHP / JavaScript / WordPress</dd>
+            <dt class="text-label">制作期間</dt>
+            <dd class="text-paragraph">約3週間</dd>
+            <dt class="text-label">種別</dt>
+            <dd class="text-paragraph">カフェサイト</dd>
+          </dl>
+        </div>
+
+        <section class="wd__section">
+          <h2 class="text-heading">目的と課題</h2>
+          <p class="text-paragraph">
+            職業訓練校の課題「架空カフェサイトのワイヤーフレーム〜デザインカンプ制作」を、実際に動くサイトとしてWordPressで実装することが目的でした。テーマも既存テーマを使わず、独自に制作しています。ロゴ、ABOUTページ、ACCESSページの基本情報以外の素材提供がなく、情報量が少ない中で間延びした印象にならないサイトに仕上げることが課題でした。
+          </p>
+        </section>
+
+        <section class="wd__section">
+          <h2 class="text-heading">工夫したこと</h2>
+          <ul class="wd__points">
+            <li class="text-paragraph">
+              <b>メインビジュアルでの世界観づくり</b><br />
+              フリー素材だけでは「カフェ」と店名の「Andante（音楽用語）」の2つの情報を同時に伝えられなかったため、写真をレコードのように円形にトリミングし、さらにレコードの回転アニメーションを加えることで世界観を表現しました。
+            </li>
+            <li class="text-paragraph">
+              <b>管理画面でのメニュー管理機能の自作</b><br />
+              メニューは既存テーマの機能に頼らず、カスタム投稿タイプとして一から実装しました。カテゴリー別の一覧画面では、jQuery UI
+              Sortable＋Ajax（nonce認証）によるドラッグ&amp;ドロップ並び替えができます。
+            </li>
+            <li class="text-paragraph">
+              <b>表示メニューの選定と制御</b><br />
+              トップページに表示するメニュー3件は専用の設定ページから選べるようにし、未選択・重複選択はエラーで保存できない仕様にしました。メニューの個別ページへの直接アクセスも404を返すようにしています。
+            </li>
+            <li class="text-paragraph">
+              <b>URLの見やすさへの配慮</b><br />
+              お知らせ投稿は、日本語タイトルのままだとURLがエンコードされて長くなってしまうため、保存時にスラッグを自動で「news-投稿ID」の形式に変換する処理を実装しました。
+            </li>
+            <li class="text-paragraph">
+              <b>素材が少ない中でのデザイン補完</b><br />
+              学校から提供されたテキストが少なかったため、間延びした印象にならないよう、余白の取り方や写真の装飾に気を配りました。
+            </li>
+            <li class="text-paragraph">
+              <b>セキュリティ対策の実装</b><br />
+              出力エスケープ・直接アクセス防止・セキュリティヘッダー（CSP含む）をコードレベルで実装し、管理画面側もログイン攻撃対策・ファイル改編防止などの設定を追加しました。
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="container container--narrow wd__foot">
+        <a href="https://intp-sun.site/wdex12/andante/" class="wd__live-link text-label" target="_blank" rel="noopener">https://intp-sun.site/wdex12/andante/</a>
+        <a href="../index.html#works" class="wd__back text-meta">← 制作実績の一覧へ戻る</a>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <a href="../index.html" class="logo logo--light">
+          <span class="logo__pre">Yuki</span>
+          <span class="logo__sep">/</span>
+          <span class="logo__post">Kabutomori</span>
+        </a>
+        <p class="site-footer__copy text-meta">© 2026 Yuki Kabutomori. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
