@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Yuki Kabutomori — Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&family=Noto+Serif+JP:wght@300;400&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&family=Klee+One:wght@400;600&family=Murecho:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="icon" href="favicon.ico" />
     <link rel="stylesheet" href="css/destyle.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -37,12 +40,12 @@
 
         <div class="mv__inner">
           <div class="mv__title-group">
-            <h1 class="mv__name">Yuki Kabutomori</h1>
-            <p class="mv__portfolio">Portfolio</p>
+            <h1 class="mv__name text-heading">Yuki Kabutomori</h1>
+            <p class="mv__portfolio text-label">Portfolio</p>
           </div>
           <div class="mv__intro">
-            <p class="mv__role">Web &amp; UI Design practice</p>
-            <p class="mv__lead">使う人の目線に立った、わかりやすいデザインを心がけています。</p>
+            <p class="mv__role text-emphasis">Web &amp; UI Design practice</p>
+            <p class="mv__lead text-paragraph">使う人の目線に立った、わかりやすいデザインを心がけています。</p>
           </div>
           <div class="mv__actions">
             <a href="#works" class="btn btn--gradient btn--md">制作実績を見る</a>
@@ -59,64 +62,55 @@
         <div class="container">
           <div class="works__head reveal">
             <div>
-              <p class="eyebrow works__eyebrow">selected works</p>
-              <h2 class="section-title">制作実績</h2>
+              <p class="eyebrow text-label">selected works</p>
+              <h2 class="section-title text-heading">制作実績</h2>
             </div>
-            <p class="works__note">— カードをクリックすると詳細をご覧いただけます —</p>
+            <p class="works__note text-meta">— カードをクリックすると詳細をご覧いただけます —</p>
           </div>
 
           <div class="works__grid">
+            <a href="works/andante.html" class="work-card reveal">
+              <div class="work-card__thumb work-card__thumb--web">
+                <div class="work-card__overlay"></div>
+                <img class="work-card__mockup" src="img/works/andante.png" alt="Andante サイトのモックアップ" loading="lazy" onerror="this.style.display = 'none'" />
+              </div>
+              <div class="work-card__body">
+                <div class="work-card__tags">
+                  <span class="tag tag--indigo text-label">Web Design</span>
+                  <span class="tag tag--rose text-label">WordPress</span>
+                </div>
+                <h3 class="work-card__title text-emphasis">Andante｜架空カフェサイト</h3>
+                <p class="work-card__meta text-meta">デザイン + コーディング + WordPress実装</p>
+              </div>
+            </a>
+
             <a href="works/deployment.html" class="work-card reveal">
               <div class="work-card__thumb work-card__thumb--web">
                 <div class="work-card__overlay"></div>
-                <div class="shot shot--browser">
-                  <div class="shot__bar"><span></span><span></span><span></span></div>
-                  <div class="shot__screen">
-                    <img class="shot__img" src="img/works/deployment.png" alt="Deployment サイトのスクリーンショット" loading="lazy" onerror="this.style.display = 'none'" />
-                  </div>
-                </div>
+                <img class="work-card__mockup" src="img/works/deployment.png" alt="Deployment サイトのモックアップ" loading="lazy" onerror="this.style.display = 'none'" />
               </div>
               <div class="work-card__body">
-                <span class="tag tag--lavender">WEB DESIGN</span>
-                <span class="tag tag--mint">CORPORATE</span>
-                <h3 class="work-card__title">Deployment｜架空IT企業コーポレートサイト</h3>
-                <p class="work-card__meta">デザイン + コーディング</p>
+                <div class="work-card__tags">
+                  <span class="tag tag--indigo text-label">Web Design</span>
+                  <span class="tag tag--violet text-label">Corporate</span>
+                </div>
+                <h3 class="work-card__title text-emphasis">Deployment｜架空IT企業コーポレートサイト</h3>
+                <p class="work-card__meta text-meta">デザイン + コーディング</p>
               </div>
             </a>
 
             <a href="works/axis.html" class="work-card reveal">
               <div class="work-card__thumb work-card__thumb--web">
                 <div class="work-card__overlay"></div>
-                <div class="shot shot--browser">
-                  <div class="shot__bar"><span></span><span></span><span></span></div>
-                  <div class="shot__screen">
-                    <img class="shot__img" src="img/works/axis.png" alt="axis サイトのスクリーンショット" loading="lazy" onerror="this.style.display = 'none'" />
-                  </div>
-                </div>
+                <img class="work-card__mockup" src="img/works/axis.png" alt="axis サイトのモックアップ" loading="lazy" onerror="this.style.display = 'none'" />
               </div>
               <div class="work-card__body">
-                <span class="tag tag--lavender">WEB DESIGN</span>
-                <span class="tag tag--pink">LP</span>
-                <h3 class="work-card__title">AXIS Minatomirai｜架空レンタルオフィス</h3>
-                <p class="work-card__meta">デザイン + コーディング</p>
-              </div>
-            </a>
-
-            <a href="works/portfolio.html" class="work-card reveal">
-              <div class="work-card__thumb work-card__thumb--web">
-                <div class="work-card__overlay"></div>
-                <div class="shot shot--browser">
-                  <div class="shot__bar"><span></span><span></span><span></span></div>
-                  <div class="shot__screen">
-                    <img class="shot__img" src="img/works/portfolio.png" alt="ポートフォリオサイトのスクリーンショット" loading="lazy" onerror="this.style.display = 'none'" />
-                  </div>
+                <div class="work-card__tags">
+                  <span class="tag tag--indigo text-label">Web Design</span>
+                  <span class="tag tag--blue text-label">LP</span>
                 </div>
-              </div>
-              <div class="work-card__body">
-                <span class="tag tag--lavender">WEB DESIGN</span>
-                <span class="tag tag--gray">PORTFOLIO</span>
-                <h3 class="work-card__title">Yuki Kabutomori｜ポートフォリオサイト</h3>
-                <p class="work-card__meta">デザイン + コーディング</p>
+                <h3 class="work-card__title text-emphasis">AXIS Minatomirai｜架空レンタルオフィスサイト</h3>
+                <p class="work-card__meta text-meta">デザイン + コーディング</p>
               </div>
             </a>
           </div>
@@ -126,8 +120,8 @@
       <section id="about" class="about">
         <div class="container about__inner">
           <div class="about__heading reveal">
-            <p class="eyebrow about__eyebrow">about</p>
-            <h2 class="section-title about__title">わたしについて</h2>
+            <p class="eyebrow text-label">about</p>
+            <h2 class="section-title text-heading">わたしについて</h2>
           </div>
 
           <div class="about__left reveal">
@@ -137,7 +131,7 @@
           </div>
 
           <div class="about__bio reveal">
-            <p class="about__bio-text">
+            <p class="about__bio-text text-paragraph">
               調剤薬局では医療事務、SESと受託開発会社ではテスト業務を経験してきました。要件を整理して形にすることや、チームで協力して進めることの面白さに惹かれ、Webデザインを学習中。「使う人の目線に立った、わかりやすいデザイン」を目指して、制作を続けています。<br />テスターとして細部を見逃さない視点と、エンドユーザーとしてシステムを操作してきた経験を活かしながら取り組んでいます。
             </p>
           </div>
@@ -147,57 +141,56 @@
       <section id="skills" class="skills">
         <div class="container">
           <div class="skills__head reveal">
-            <p class="eyebrow skills__eyebrow">skills &amp; learning</p>
-            <h2 class="section-title">スキル</h2>
+            <p class="eyebrow text-label">skills &amp; learning</p>
+            <h2 class="section-title text-heading">スキル</h2>
           </div>
 
           <div class="skills__grid">
             <div class="skill-card reveal">
-              <div class="skill-card__icon skill-card__icon--blue">F</div>
-              <p class="skill-card__name">Figma</p>
-              <p class="skill-card__meta">UI設計 / プロトタイプ</p>
+              <div class="skill-card__icon text-heading skill-card__icon--blue">F</div>
+              <p class="skill-card__name text-emphasis">Figma</p>
+              <p class="skill-card__meta text-meta">UI設計 / プロトタイプ</p>
             </div>
 
             <div class="skill-card reveal">
-              <div class="skill-card__icon skill-card__icon--pink">Ps</div>
-              <p class="skill-card__name">Photoshop / Illustrator</p>
-              <p class="skill-card__meta">画像編集 / バナー制作</p>
+              <div class="skill-card__icon text-heading skill-card__icon--blue">Ps</div>
+              <p class="skill-card__name text-emphasis">Photoshop / Illustrator</p>
+              <p class="skill-card__meta text-meta">画像編集 / バナー制作</p>
             </div>
 
             <div class="skill-card reveal">
-              <div class="skill-card__icon skill-card__icon--mint">&lt;/&gt;</div>
-              <p class="skill-card__name">HTML / CSS</p>
-              <p class="skill-card__meta">マークアップ / レスポンシブ</p>
+              <div class="skill-card__icon text-heading skill-card__icon--blue">&lt;/&gt;</div>
+              <p class="skill-card__name text-emphasis">HTML / CSS</p>
+              <p class="skill-card__meta text-meta">マークアップ / レスポンシブ</p>
             </div>
 
             <div class="skill-card reveal">
-              <div class="skill-card__icon skill-card__icon--lavender">JS</div>
-              <p class="skill-card__name">JavaScript</p>
-              <p class="skill-card__meta">基礎 / DOM操作</p>
+              <div class="skill-card__icon text-heading skill-card__icon--blue">JS</div>
+              <p class="skill-card__name text-emphasis">JavaScript</p>
+              <p class="skill-card__meta text-meta">基礎</p>
             </div>
 
             <div class="skill-card reveal">
-              <div class="skill-card__icon skill-card__icon--mint">PHP</div>
-              <p class="skill-card__name">PHP</p>
-              <p class="skill-card__meta">基礎 / サーバーサイド処理</p>
+              <div class="skill-card__icon text-heading skill-card__icon--blue">PHP</div>
+              <p class="skill-card__name text-emphasis">PHP</p>
+              <p class="skill-card__meta text-meta">基礎 / サーバーサイド処理</p>
             </div>
           </div>
 
           <div class="learning reveal">
             <div class="learning__inner">
               <div class="learning__text">
-                <p class="eyebrow learning__eyebrow">currently learning</p>
-                <h3 class="learning__title">学習中のこと</h3>
-                <p class="learning__body">
-                  実務を見据え、WordPress によるサイト制作や Astro を使った静的サイト構築を実践学習しています。 また、より堅牢なコードを書くために TypeScript を、UIコンポーネント設計の幅を広げるために
-                  React を学習中です。
+                <h3 class="learning__title text-heading">学習中のこと</h3>
+                <p class="learning__body text-paragraph">
+                  実務を見据え、WordPress によるサイト制作を学んでいます。また、保守性の高いコードが書ける TypeScript、UIコンポーネント設計の幅を広げる React、ノーコードで形にできる STUDIO
+                  の学習にも取り組んでいます。
                 </p>
               </div>
               <div class="learning__tags">
-                <div class="learning-tag learning-tag--base">WordPress</div>
-                <div class="learning-tag learning-tag--base">Astro</div>
-                <div class="learning-tag learning-tag--pink">React</div>
-                <div class="learning-tag learning-tag--lavender">TypeScript</div>
+                <div class="learning-tag text-label learning-tag--base">WordPress</div>
+                <div class="learning-tag text-label learning-tag--base">STUDIO</div>
+                <div class="learning-tag text-label learning-tag--base">React</div>
+                <div class="learning-tag text-label learning-tag--base">TypeScript</div>
               </div>
             </div>
           </div>
@@ -212,7 +205,7 @@
           <span class="logo__sep">/</span>
           <span class="logo__post">Kabutomori</span>
         </a>
-        <p class="site-footer__copy">© 2026 Yuki Kabutomori. All rights reserved.</p>
+        <p class="site-footer__copy text-meta">© 2026 Yuki Kabutomori. All rights reserved.</p>
       </div>
     </footer>
 
